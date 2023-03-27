@@ -1,0 +1,31 @@
+/* src/global.css */
+.o-ui-general-element {
+  box-sizing: border-box;
+}
+
+/* src/Badge/Badge.css */
+.sm-ds-badge {
+  box-sizing: border-box;
+  background: red;
+}
+
+/* src/Button/Button.css */
+.sm-ds-button {
+  box-sizing: border-box;
+  background: blue;
+}
+
+/* src/ZHtmlInput/ZHtmlInput.css */
+.o-ui-zhtml-input-element {
+  box-sizing: border-box;
+}
+
+/* src/input/Input.css */
+.o-ui-input {
+  width: 240px;
+}
+
+/* src/date-input/DateInput.css */
+.o-ui-date-input {
+  width: 160px;
+}

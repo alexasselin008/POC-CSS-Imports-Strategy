@@ -1,0 +1,21 @@
+{
+  "name": "small-ds",
+  "version": "1.0.0",
+  "description": "small design system",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm run -r build",
+    "start": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sharegate/typescript-config": "1.1.1",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.2",
+    "tsup": "6.7.0"
+  }
+}

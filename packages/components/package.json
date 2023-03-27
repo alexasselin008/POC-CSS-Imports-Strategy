@@ -1,0 +1,20 @@
+{
+  "name": "@small-ds/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "clean": true
+  }
+}
