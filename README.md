@@ -1,4 +1,4 @@
-# POC-CSS-Rollup-Ordering
+# POC-CSS-Imports-Strategy
 Proof of Concept to Improve CSS Imports Strategy in the Design System.
 
 ## Why this Proof of concept?
