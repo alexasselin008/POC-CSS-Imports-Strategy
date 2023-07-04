@@ -1,7 +1,7 @@
 import "./global.css";
 
-export * from "./Badge"
-export * from "./Button"
-export * from "./date-input"
-export * from "./input"
-export * from "./ZHtmlInput"
+export * from "./Badge/Badge.tsx";
+export * from "./Button/Button.tsx";
+export * from "./ZHtmlInput/ZHtmlInput.tsx";
+export * from "./date-input/DateInput.tsx";
+export * from "./input/TextInput.tsx";

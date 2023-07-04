@@ -1,8 +1,8 @@
-import { ComponentProps } from "react"
-import "./ZHtmlInput.css";
+import { ComponentProps } from "react";
+import styles from "./ZHtmlInput.module.css";
 
 export const ZHtmlInput = ({className, ...rest}: ComponentProps<"input">) => {
   return (
-    <input className={className + " " + "o-ui-zhtml-input-element"} {...rest} />
+    <input className={className + " " + styles["o-ui-zhtml-input-element"]} {...rest} />
   )
 }

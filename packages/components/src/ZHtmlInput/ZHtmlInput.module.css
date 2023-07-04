@@ -1,0 +1,6 @@
+@import "@small-ds/tokens";
+
+.o-ui-zhtml-input-element {
+  box-sizing: border-box;
+  color: var(--o-ui-neutral-1)
+}

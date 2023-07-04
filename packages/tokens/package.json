@@ -1,0 +1,11 @@
+{
+  "name": "@small-ds/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+  },
+  "main": "./tokens.css",
+  "style": "./tokens.css",
+  "author": "",
+  "license": "ISC"
+}

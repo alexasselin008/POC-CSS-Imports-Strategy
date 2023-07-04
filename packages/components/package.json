@@ -1,8 +1,19 @@
 {
   "name": "@small-ds/components",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "style": "dist/index.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./index.css": "./dist/index.css"
+  },
+  "type": "module",
+  "sideeffects": "*.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup"
@@ -13,8 +24,14 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "tsup": {
-    "entry": ["src/index.ts"],
-    "clean": true
+  "devDependencies": {
+    "@types/node": "20.3.3",
+    "@workleap/tsup-configs": "2.0.0",
+    "@workleap/typescript-configs": "2.3.2",
+    "postcss-modules": "6.0.0",
+    "postcss": "8.4.24"
+  },
+  "dependencies": {
+    "@small-ds/tokens": "workspace:*"
   }
 }

@@ -1,9 +1,9 @@
-import "./Badge.css";
+import styles from "./Badge.module.css";
 
 export interface BadgeProps {
   label: string;
 }
 
 export const Badge = ({label}: BadgeProps) => {
-  return <div className="sm-ds-badge">{label}</div>;
+  return <div className={styles["sm-ds-badge"]}>{label}</div>;
 }
