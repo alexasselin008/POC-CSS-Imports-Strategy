@@ -1,0 +1,5 @@
+.o-ui-html-input-element {
+    composes: o-ui-input from "../TextInput/Input.module.css";
+    box-sizing: border-box;
+    color: var(--o-ui-neutral-1);
+}

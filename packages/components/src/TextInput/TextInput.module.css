@@ -1,0 +1,3 @@
+.o-ui-text-input {
+  composes: o-ui-input from "./Input.module.css";
+}

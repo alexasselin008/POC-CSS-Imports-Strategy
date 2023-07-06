@@ -2,7 +2,6 @@
   "name": "@small-ds/components",
   "version": "2.0.0",
   "description": "",
-  "style": "dist/index.css",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -32,6 +31,7 @@
     "postcss": "8.4.24"
   },
   "dependencies": {
-    "@small-ds/tokens": "workspace:*"
+    "@small-ds/tokens": "workspace:*",
+    "classnames": "2.3.2"
   }
 }

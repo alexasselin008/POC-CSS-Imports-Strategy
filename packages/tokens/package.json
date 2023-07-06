@@ -2,10 +2,15 @@
   "name": "@small-ds/tokens",
   "version": "1.0.0",
   "description": "",
+  "exports": {
+    "./index.css": "./tokens.module.css"
+  },
+  "type": "module",
+  "sideeffects": "*.css",
   "scripts": {
   },
-  "main": "./tokens.css",
-  "style": "./tokens.css",
+  "main": "./tokens.module.css",
+  "style": "./tokens.module.css",
   "author": "",
   "license": "ISC"
 }
