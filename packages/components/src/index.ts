@@ -5,5 +5,8 @@ export * from "./Button/Button.tsx";
 export * from "./DateInput/DateInput.tsx";
 export * from "./HtmlInput/HtmlInput.tsx";
 export * from "./TextInput/TextInput.tsx";
-export * from "./TokenInjector/TokenInjector.tsx";
+
+export * from "./Providers/ColorSchemeContext.ts";
+export * from "./Providers/ColorSchemeProvider.tsx";
+export * from "./Providers/HopperProvider.tsx";
 
