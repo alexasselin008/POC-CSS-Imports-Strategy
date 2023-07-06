@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import packageJson from "../../package.json" assert { type: "json" };
+import { BreakpointProvider } from "./BreakpointProvider.tsx";
 import { ColorSchemeProvider } from "./ColorSchemeProvider.tsx";
 import { GlobalStyleProvider } from "./GlobalStyleProvider.tsx";
 import { TokensProvider } from "./TokensProvider.tsx";
@@ -36,10 +37,3 @@ export function HopperProvider({ children, withGlobalStyles = false, withTokens 
     );
 }
 
-function BreakpointProvider({ children} : {children: ReactNode}) {
-    return (
-        <>
-            {children}
-        </>
-    );
-}
