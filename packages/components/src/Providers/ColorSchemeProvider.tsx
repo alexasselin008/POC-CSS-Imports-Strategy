@@ -1,4 +1,5 @@
 import { ReactNode, useState } from "react";
+import { ColorSchemeContext } from "./ColorSchemeContext.ts";
 import { ColorScheme, ColorSchemeOrSystem, useColorScheme } from "./useColorScheme.ts";
 
 export interface ColorSchemeProviderProps {

@@ -1,18 +1,10 @@
 # POC-CSS-Imports-Strategy
 Proof of Concept to Improve CSS Imports Strategy in the Design System.
 
-## Why this Proof of concept?
 
-The purpose of this Proof of Concept (POC) is to explore an alternative approach to our current Design System's CSS Imports strategy. Our current approach involves a single index.css file located at the root of the directory, which re-exports all CSS files from every component. This approach creates a challenge for the TurboSnap feature of Chromatic, as it cannot map a CSS file to a story file.
+`GlobalStyleProvider`: Since the tokens are added in a div inside the body, the variables can not be used directly on the body element. So, the GlobalStyleProvider is used to add the variables to the body element via JavaScript.
 
-The proposed approach in this POC involves having each component import its own CSS file, enabling Webpack to map CSS files to components and allowing us to link components to their stories. This approach aims to resolve the issue with Chromatic's TurboSnap feature and improve the CSS import strategy in the Design System.
+`TokenProvider`: The TokenProvider is used to add the tokens to the DOM via JavaScript. The tokens are added in style tag in the header, but target a specific div declared in the body. This divs allow us to have multiple sets of tokens in the same page.
 
-## Frequently Asked Questions (FAQ):
-1. **What is the order of declaration of CSS files in the resulting index.css file?**
-**Answer:** The CSS files are ordered based on the dependencies between components. Components with no dependencies are declared first, while complex components are declared last. This approach helps to ensure that the resulting index.css file is organized in a logical and efficient manner.
-
-2. **How can we handle global CSS files that need to be imported?**
-**Answer:** Global CSS files can be imported directly in the entry point (index.ts) at the root of the directory. We can specify the order in which they should appear in the resulting index.css file. Refer to the index.ts file located in the ./packages/components directory for an example of how this can be accomplished.
-
-
+`CSS Modules`: The CSS Modules are used to scope the CSS classes to the component. We use the package's version to generate the Hash. this ensures that the CSS classes are unique for each version, making sure multiple version of the Design system can be loaded.
 
